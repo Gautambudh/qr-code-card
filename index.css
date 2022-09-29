@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: [Outfit];
+}
+section {
+    height: 100vh;
+}
+.container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* ********** styling Card elements ********** */
+.card {
+    width: 22rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+}
+.qr-img {
+    padding: 1rem 0;
+}
+.qr-img img {
+    border-radius: 1rem;
+}
+/* ************* styling Text in the Card ************* */
+.card-text {
+    padding: 0.5rem 0;
+}
+h2 {
+    font-weight: 700;
+    color: rgb(5, 5, 33);
+}
+p {
+    margin: 1rem 0;
+    color: rgb(154, 153, 153);
+    font-size: 15px;
+}
+
+/* *************** media queries for font size in smaller device ********* */
+@media screen and (max-width:375px) {
+    .card {
+        width: 18rem; 
+    }
+    p {
+        font-size: 10.6px;
+    }
+}
